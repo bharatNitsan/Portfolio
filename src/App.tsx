@@ -14,8 +14,9 @@ import {
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Style.css';
+import Footer from './Components/Footer';
 
-function App() {
+const App = () => {
   const [load, upadateLoad] = useState<boolean>(true);
 
   useEffect(() => {
@@ -38,10 +39,11 @@ function App() {
             <Route path="/project" element={<Project />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     </>
   )
 }
 
-export default App
+export default App;

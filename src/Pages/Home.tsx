@@ -2,6 +2,8 @@ import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
 import {assets} from '../assets/assets';
 import Type from "./Type";
+import Intro from "./Intro";
+
 const Home = () => {
   return (
     <section className='home-section-wrap'>
@@ -36,8 +38,10 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <div id="about" className='home-about-section'>
-        <Container className='home-content'></Container>
+      <div id="about">
+        <Container className='home-content'>
+          <Intro />
+        </Container>
       </div>
     </section>
   )

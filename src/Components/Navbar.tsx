@@ -5,13 +5,24 @@ import {assets} from '../assets/assets';
 
 const NavBar = () => {
   const [expand, updateExpanded] = useState<boolean>(false);
+  const [navBarColour, updateNavbar] = useState<boolean>(false);
+
+  const scrollHandler = () => {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={expand ? 'sticky': 'navbar'}
+      className={navBarColour ? 'sticky': 'navbar'}
     >
       <Container>
         {/* Logo */}
