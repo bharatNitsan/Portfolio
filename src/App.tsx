@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Project from './Pages/Project';
 import Resume from './Pages/Resume';
+import Contact from './Pages/Contact';
 
 import {
   BrowserRouter as Router,
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Project />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
         </div>

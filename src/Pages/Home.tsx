@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {assets} from '../assets/assets';
 import Type from "./Type";
 import Intro from "./Intro";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Home = () => {
   return (
@@ -28,7 +29,7 @@ const Home = () => {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
+              <LazyLoadImage
                 src={assets.devLogo}
                 alt="developer pic"
                 className="img-fluid"

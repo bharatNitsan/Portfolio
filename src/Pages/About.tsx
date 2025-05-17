@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const About = () => {
 
@@ -76,7 +77,7 @@ const About = () => {
         <Row className='mb-5'>
           {techStack.map((tech) => (
             <Col key={tech.id} md={2} className='tech-icons col-md-2 col-4'>
-              <img src={`src/assets/tech-stack/${tech.icon}`} alt={tech.name} />
+              <LazyLoadImage src={`src/assets/tech-stack/${tech.icon}`} alt={tech.name} />
             </Col>
           ))}
         </Row>
@@ -85,7 +86,7 @@ const About = () => {
         <Row className='mb-5'>
           {tools.map((tool) => (
             <Col key={tool.id} md={2} className='tech-icons col-md-2 col-4'>
-              <img src={`src/assets/tech-tools/${tool.icon}`} alt={tool.name}  title={tool.name}/>
+              <LazyLoadImage src={`src/assets/tech-tools/${tool.icon}`} alt={tool.name}  title={tool.name}/>
             </Col>
           ))}
         </Row>

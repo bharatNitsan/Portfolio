@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 interface ProjectProps {
   name: string;
   image: string;
@@ -11,7 +11,7 @@ const Projectcard = ({ project }: { project: ProjectProps }) => {
   return (
     <div className="project-card-view card">
       <div className="project-card-image">
-        <img src={project.image} alt={project.name} className="card-img-top" />
+        <LazyLoadImage src={project.image} alt={project.name} className="card-img-top" />
       </div>
       <div className="card-body project-card-content">
         <h3>{project.name}</h3>

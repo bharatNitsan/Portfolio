@@ -179,8 +179,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em;
-  width: 2.5em;
+  height: auto;
+  width: 3.5em;
 }
 
 .navbar-nav .nav-link {
@@ -564,7 +564,8 @@ button:focus {
 /* About */
 /* --------- */
 
-.about-section {
+.about-section,
+.content-section {
   position: relative;
   padding-top: 150px;
   padding-bottom: 30px;
